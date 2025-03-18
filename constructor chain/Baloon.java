@@ -32,7 +32,7 @@ Baloon(int nobaloon,char size)
 	this.size=size;
 	System.out.println("baloon3:"+ nobaloon + "," +size );
 
-}
+}
 
 Baloon(String shape,String color,double capacity,int cost)
 {
