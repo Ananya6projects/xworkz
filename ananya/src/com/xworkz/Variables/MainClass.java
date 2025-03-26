@@ -2,7 +2,7 @@ package com.xworkz.Variables;
 
 public class MainClass {
     public static void main(String[] args) {
-        // Local variables
+
         Jail jail = new Jail("Alcatraz", "San Francisco", "John Doe", 500);
         Satellite satellite = new Satellite(SatelliteType.COMMUNICATION, 1500000, 2000, 500);
         IdCard idCard = new IdCard("Plastic", new String[]{"Red", "Blue"}, 10.5, "Govt");
@@ -26,11 +26,12 @@ public class MainClass {
                 camera, new Camera("Nikon", 1500, CameraType.SECURITY, "Bluetooth")
         };
 
-        // Using objects as parameters
+
         printJail(jail);
     }
 
     public static void printJail(Jail jail) {
         System.out.println("Jail Name: " + jail.getName());
+
     }
 }
