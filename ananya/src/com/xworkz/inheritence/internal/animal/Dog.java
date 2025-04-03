@@ -1,4 +1,4 @@
-package com.xworkz.inheritence.internal.animal;
+package xworkz.ananya.src.com.xworkz.inheritence.internal.animal;
 
 public class Dog extends Animal {
     public Dog() {
