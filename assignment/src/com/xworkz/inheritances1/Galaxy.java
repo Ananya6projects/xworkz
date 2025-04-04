@@ -1,9 +1,29 @@
 package com.xworkz.inheritances1;
 
 public class Galaxy extends GalaxyParent {
-    void milkyWayFeatures() { System.out.println("Milky Way: Contains Solar System"); }
-    void galaxyClusters() { System.out.println("Clusters: Virgo Cluster, Local Group"); }
-    void blackHoles() { System.out.println("Black Holes: Found at Galaxy Centers"); }
-    void darkMatterPresence() { System.out.println("Dark Matter: Makes Up Most of Galaxy Mass"); }
-    void galaxyExploration() { System.out.println("Exploration: Hubble Telescope, JWST"); }
+
+    @Override
+    void category() {
+        System.out.println("Category: Galaxies are massive collections of stars, planets, gas, and dark matter.");
+    }
+
+    @Override
+    void largestGalaxy() {
+        System.out.println("Largest Galaxy: IC 1101, roughly 6 million light-years in diameter.");
+    }
+
+    @Override
+    void galaxyTypes() {
+        System.out.println("Types: Spiral (e.g., Milky Way), Elliptical, Irregular, and Lenticular.");
+    }
+
+    @Override
+    void galaxyFormation() {
+        System.out.println("Formation: Formed from large clouds of gas and dust collapsing under gravity.");
+    }
+
+    @Override
+    void galaxyImportance() {
+        System.out.println("Importance: Galaxies are essential structures for the birth and evolution of stars and planetary systems.");
+    }
 }

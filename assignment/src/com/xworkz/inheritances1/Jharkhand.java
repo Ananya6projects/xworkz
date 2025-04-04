@@ -1,9 +1,29 @@
 package com.xworkz.inheritances1;
 
 public class Jharkhand extends JharkhandParent {
-    void capital() { System.out.println("Capital: Ranchi"); }
-    void language() { System.out.println("Language: Hindi"); }
-    void population() { System.out.println("Population: 38 million"); }
-    void famousFood() { System.out.println("Famous Food: Thekua"); }
-    void touristSpot() { System.out.println("Tourist Spot: Hundru Falls"); }
+
+    @Override
+    void countryInfo() {
+        System.out.println("Jharkhand is a mineral-rich state in eastern India.");
+    }
+
+    @Override
+    void stateAnimal() {
+        System.out.println("State Animal: Elephant");
+    }
+
+    @Override
+    void stateBird() {
+        System.out.println("State Bird: Asian Koel");
+    }
+
+    @Override
+    void stateSport() {
+        System.out.println("State Sport: Hockey");
+    }
+
+    @Override
+    void stateFlower() {
+        System.out.println("State Flower: Palash");
+    }
 }

@@ -1,9 +1,9 @@
 package com.xworkz.inheritances1;
 
 public class Meteor extends MeteorParent {
-    void shootingStarEffect() { System.out.println("Effect: Glowing Streak in the Sky"); }
-    void largestMeteorImpact() { System.out.println("Largest: Chicxulub Crater (Dinosaur Extinction)"); }
-    void meteoriteClassification() { System.out.println("Types: Stony, Iron, Stony-Iron"); }
-    void meteorSurvival() { System.out.println("Survival: Most Burn Up in Atmosphere"); }
-    void meteoriteCollection() { System.out.println("Collection: Studied in Museums & Labs"); }
+    void origin() { System.out.println("Origin: Asteroid Belt or Comet Trails"); }
+    void size() { System.out.println("Size: Can Vary from Pebble to Boulder"); }
+    void visibility() { System.out.println("Visibility: Seen as Shooting Stars"); }
+    void heat() { System.out.println("Heat: Caused by Atmospheric Friction"); }
+    void sound() { System.out.println("Sound: Sometimes Produces Sonic Boom"); }
 }

@@ -2,121 +2,104 @@ package com.xworkz.inheritances1;
 
     public class Main {
         public static void main(String[] args) {
-            AndamanNicobarParent andamanNicobarParent = new AndamanNicobarParent();
-            andamanNicobarParent.countryInfo();
-            andamanNicobarParent.stateAnimal();
-            andamanNicobarParent.stateBird();
-            andamanNicobarParent.stateSport();
-            andamanNicobarParent.stateFlower();
+            IndiaParent indiaParent = new IndiaParent();
+            indiaParent.countryInfo();
+            indiaParent.stateAnimal();
+            indiaParent.stateBird();
+            indiaParent.stateSport();
+            indiaParent.stateFlower();
 
-            AndamanNicobar andamanNicobar = new AndamanNicobar();
-            andamanNicobar.capital();
-            andamanNicobar.language();
-            andamanNicobar.population();
-            andamanNicobar.famousFood();
-            andamanNicobar.touristSpot();
 
-            AndamanNicobarParent anParentRef = new AndamanNicobar();
+
+            IndiaParent anParentRef = new India();
             anParentRef.countryInfo();
             anParentRef.stateAnimal();
             anParentRef.stateBird();
             anParentRef.stateSport();
             anParentRef.stateFlower();
 
-            System.out.println(">>>>>>>>>>>>>>>> End Of Andaman & Nicobar <<<<<<<<<<<<<<<<");
+            System.out.println(">>>>>>>>>>>>>>>> End Of India <<<<<<<<<<<<<<<<");
 
-            AndhraPradeshParent andhraPradeshParent = new AndhraPradeshParent();
-            andhraPradeshParent.countryInfo();
-            andhraPradeshParent.stateAnimal();
-            andhraPradeshParent.stateBird();
-            andhraPradeshParent.stateSport();
-            andhraPradeshParent.stateFlower();
+            AntarticaParent antarticaParent = new AntarticaParent();
+            antarticaParent.countryInfo();
+            antarticaParent.stateAnimal();
+            antarticaParent.stateBird();
+            antarticaParent.stateSport();
+            antarticaParent.stateFlower();
 
-            AndhraPradesh andhraPradesh = new AndhraPradesh();
-            andhraPradesh.capital();
-            andhraPradesh.language();
-            andhraPradesh.population();
-            andhraPradesh.famousFood();
-            andhraPradesh.touristSpot();
 
-            AndhraPradeshParent apParentRef = new AndhraPradesh();
+            AntarticaParent apParentRef = new Antartica();
             apParentRef.countryInfo();
             apParentRef.stateAnimal();
             apParentRef.stateBird();
             apParentRef.stateSport();
             apParentRef.stateFlower();
 
-            System.out.println(">>>>>>>>>>>>>>>> End Of Andhra Pradesh <<<<<<<<<<<<<<<<");
+            System.out.println(">>>>>>>>>>>>>>>> End Of antartica <<<<<<<<<<<<<<<<");
 
-            ArunachalPradeshParent arunachalPradeshParent = new ArunachalPradeshParent();
-            arunachalPradeshParent.countryInfo();
-            arunachalPradeshParent.stateAnimal();
-            arunachalPradeshParent.stateBird();
-            arunachalPradeshParent.stateSport();
-            arunachalPradeshParent.stateFlower();
-
-            ArunachalPradesh arunachalPradesh = new ArunachalPradesh();
-            arunachalPradesh.capital();
-            arunachalPradesh.language();
-            arunachalPradesh.population();
-            arunachalPradesh.famousFood();
-            arunachalPradesh.touristSpot();
-
-            ArunachalPradeshParent arParentRef = new ArunachalPradesh();
-            arParentRef.countryInfo();
-            arParentRef.stateAnimal();
-            arParentRef.stateBird();
-            arParentRef.stateSport();
-            arParentRef.stateFlower();
-
-            System.out.println(">>>>>>>>>>>>>>>> End Of Arunachal Pradesh <<<<<<<<<<<<<<<<");
-
-            AssamParent assamParent = new AssamParent();
-            assamParent.countryInfo();
-            assamParent.stateAnimal();
-            assamParent.stateBird();
-            assamParent.stateSport();
-            assamParent.stateFlower();
-
-            Assam assam = new Assam();
-            assam.capital();
-            assam.language();
-            assam.population();
-            assam.famousFood();
-            assam.touristSpot();
-
-            AssamParent assamParentRef = new Assam();
-            assamParentRef.countryInfo();
-            assamParentRef.stateAnimal();
-            assamParentRef.stateBird();
-            assamParentRef.stateSport();
-            assamParentRef.stateFlower();
-
-            System.out.println(">>>>>>>>>>>>>>>> End Of Assam <<<<<<<<<<<<<<<<");
-
-            BiharParent biharParent = new BiharParent();
-            biharParent.countryInfo();
-            biharParent.stateAnimal();
-            biharParent.stateBird();
-            biharParent.stateSport();
-            biharParent.stateFlower();
-
-            Bihar bihar = new Bihar();
-            bihar.capital();
-            bihar.language();
-            bihar.population();
-            bihar.famousFood();
-            bihar.touristSpot();
-
-            BiharParent bihaParent = new Bihar();
-            bihaParent.countryInfo();
-            bihaParent.stateAnimal();
-            bihaParent.stateBird();
-            bihaParent.stateSport();
-            bihaParent.stateFlower();
+         AntParent antParent = new AntParent();
+         antParent.speciesInfo();
+         antParent.colonyType();
+         antParent.bodyStructure();
+         antParent.defenseMechanism();
+         antParent.lifeSpan();
 
 
-            System.out.println(">>>>>>>>>>>>>>>> End Of Bihar <<<<<<<<<<<<<<<<");
+         Ant ant = new Ant();
+         ant.habitat();
+         ant.communication();
+         ant.speciesCount();
+         ant.foodHabit();
+         ant.interestingFact();
+
+
+         ant.speciesInfo();
+         ant.colonyType();
+         ant.bodyStructure();
+
+
+         AntParent arParentRef = new Ant(); // Upcasting
+         arParentRef.speciesInfo(); // Overridden version from Ant
+         arParentRef.colonyType();  // Overridden version from Ant
+         arParentRef.bodyStructure(); // Overridden version from Ant
+
+         System.out.println(">>>>>>>>>>>>>>>> End Of Ants <<<<<<<<<<<<<<<<");
+
+
+            HassanParent hassanParent = new HassanParent();
+            hassanParent.countryInfo();
+            hassanParent.stateAnimal();
+            hassanParent.stateBird();
+            hassanParent.stateSport();
+            hassanParent.stateFlower();
+
+
+            HassanParent hassanParentRef = new Hassan();
+            hassanParentRef.countryInfo();
+            hassanParentRef.stateAnimal();
+            hassanParentRef.stateBird();
+            hassanParentRef.stateSport();
+            hassanParentRef.stateFlower();
+
+            System.out.println(">>>>>>>>>>>>>>>> End Of Hassan<<<<<<<<<<<<<<<<");
+
+            BanarasParent banarasParent = new BanarasParent();
+            banarasParent.countryInfo();
+            banarasParent.stateAnimal();
+            banarasParent.stateBird();
+            banarasParent.stateSport();
+            banarasParent.stateFlower();
+
+
+            BanarasParent banarasParent1 = new Banaras();
+            banarasParent1.countryInfo();
+            banarasParent1.stateAnimal();
+            banarasParent1.stateBird();
+            banarasParent1.stateSport();
+            banarasParent1.stateFlower();
+
+
+            System.out.println(">>>>>>>>>>>>>>>> End Of banaras <<<<<<<<<<<<<<<<");
 
 
             ChandigarhParent chandigarhParent = new ChandigarhParent();
@@ -126,12 +109,6 @@ package com.xworkz.inheritances1;
             chandigarhParent.stateSport();
             chandigarhParent.stateFlower();
 
-            Chandigarh chandigarh = new Chandigarh();
-            chandigarh.capital();
-            chandigarh.language();
-            chandigarh.population();
-            chandigarh.famousFood();
-            chandigarh.touristSpot();
 
             ChandigarhParent chandigarhParent1 = new Chandigarh();
             chandigarhParent1.countryInfo();
@@ -149,13 +126,6 @@ package com.xworkz.inheritances1;
             chhattisgarhParent.stateSport();
             chhattisgarhParent.stateFlower();
 
-            Chhattisgarh chhattisgarh = new Chhattisgarh();
-            chhattisgarh.capital();
-            chhattisgarh.language();
-            chhattisgarh.population();
-            chhattisgarh.famousFood();
-            chhattisgarh.touristSpot();
-
 
             GoaParent goaParent = new GoaParent();
             goaParent.countryInfo();
@@ -163,13 +133,6 @@ package com.xworkz.inheritances1;
             goaParent.stateBird();
             goaParent.stateSport();
             goaParent.stateFlower();
-
-            Goa goa = new Goa();
-            goa.capital();
-            goa.language();
-            goa.population();
-            goa.famousFood();
-            goa.touristSpot();
 
             GoaParent goaParent1 = new Goa();
             goaParent1.countryInfo();
@@ -187,12 +150,6 @@ package com.xworkz.inheritances1;
             gujaratParent.stateSport();
             gujaratParent.stateFlower();
 
-            Gujarat gujarat = new Gujarat();
-            gujarat.capital();
-            gujarat.language();
-            gujarat.population();
-            gujarat.famousFood();
-            gujarat.touristSpot();
 
             GujaratParent gujaratParent1 = new Gujarat();
             gujaratParent1.countryInfo();
@@ -211,13 +168,6 @@ package com.xworkz.inheritances1;
             haryanaParent.stateSport();
             haryanaParent.stateFlower();
 
-            Haryana haryana = new Haryana();
-            haryana.capital();
-            haryana.language();
-            haryana.population();
-            haryana.famousFood();
-            haryana.touristSpot();
-
             HaryanaParent haryanaParent1 = new Haryana();
             haryanaParent1.countryInfo();
             haryanaParent1.stateAnimal();
@@ -235,12 +185,6 @@ package com.xworkz.inheritances1;
             himachalPradeshParent.stateSport();
             himachalPradeshParent.stateFlower();
 
-            HimachalPradesh himachalPradesh = new HimachalPradesh();
-            himachalPradesh.capital();
-            himachalPradesh.language();
-            himachalPradesh.population();
-            himachalPradesh.famousFood();
-            himachalPradesh.touristSpot();
 
             HimachalPradeshParent himachalParent = new HimachalPradesh();
             himachalParent.countryInfo();
@@ -259,12 +203,6 @@ package com.xworkz.inheritances1;
             jharkhandParent.stateSport();
             jharkhandParent.stateFlower();
 
-            Jharkhand jharkhand = new Jharkhand();
-            jharkhand.capital();
-            jharkhand.language();
-            jharkhand.population();
-            jharkhand.famousFood();
-            jharkhand.touristSpot();
 
             JharkhandParent jharkhandParent1 = new Jharkhand();
             jharkhandParent1.countryInfo();
@@ -283,12 +221,6 @@ package com.xworkz.inheritances1;
             karnatakaParent.stateSport();
             karnatakaParent.stateFlower();
 
-            Karnataka karnataka = new Karnataka();
-            karnataka.capital();
-            karnataka.language();
-            karnataka.population();
-            karnataka.famousFood();
-            karnataka.touristSpot();
 
             KarnatakaParent karnatakaParent1 = new Karnataka();
             karnatakaParent1.countryInfo();
@@ -698,12 +630,7 @@ package com.xworkz.inheritances1;
             mountainParent.climate();
             mountainParent.famousTrek();
 
-            Mountain mountain = new Mountain();
-            mountain.location();
-            mountain.height();
-            mountain.famousClimbers();
-            mountain.firstAscent();
-            mountain.geologicalAge();
+
 
             MountainParent mountainRef = new Mountain();
             mountainRef.category();
@@ -770,12 +697,6 @@ package com.xworkz.inheritances1;
             desertParent.averageRainfall();
             desertParent.desertFlora();
 
-            Desert desert = new Desert();
-            desert.temperatureRange();
-            desert.nocturnalAnimals();
-            desert.sandDunes();
-            desert.desertSurvival();
-            desert.desertEcosystem();
 
             DesertParent desertRef = new Desert();
             desertRef.category();
@@ -794,12 +715,6 @@ package com.xworkz.inheritances1;
             forestParent.largestForest();
             forestParent.forestImportance();
 
-            Forest forest = new Forest();
-            forest.forestFirePrevention();
-            forest.deforestationImpact();
-            forest.forestArea();
-            forest.majorForests();
-            forest.rainforestTypes();
 
             ForestParent forestRef = new Forest();
             forestRef.biodiversity();
@@ -842,12 +757,7 @@ package com.xworkz.inheritances1;
             islandParent.islandClimate();
             islandParent.largestIsland();
 
-            Island island = new Island();
-            island.mostPopulatedIsland();
-            island.islandHabitats();
-            island.islandClimate();
-            island.islandFormation();
-            island.islandEconomy();
+
 
             IslandParent islandRef = new Island();
             islandRef.category();
@@ -866,13 +776,6 @@ package com.xworkz.inheritances1;
             galaxyParent.galaxyFormation();
             galaxyParent.galaxyImportance();
 
-            Galaxy galaxy = new Galaxy();
-            galaxy.milkyWayFeatures();
-            galaxy.galaxyClusters();
-            galaxy.blackHoles();
-            galaxy.darkMatterPresence();
-            galaxy.galaxyExploration();
-
             GalaxyParent galaxyRef = new Galaxy();
             galaxyRef.category();
             galaxyRef.largestGalaxy();
@@ -890,12 +793,6 @@ package com.xworkz.inheritances1;
             cometParent.cometOrbit();
             cometParent.cometComposition();
 
-            Comet comet = new Comet();
-            comet.periodicComets();
-            comet.nonPeriodicComets();
-            comet.impactOnPlanets();
-            comet.brightCometSightings();
-            comet.cometMissions();
 
             CometParent cometRef = new Comet();
             cometRef.category();
@@ -914,12 +811,7 @@ package com.xworkz.inheritances1;
             meteorParent.meteorComposition();
             meteorParent.meteorImpact();
 
-            Meteor meteor = new Meteor();
-            meteor.shootingStarEffect();
-            meteor.largestMeteorImpact();
-            meteor.meteoriteClassification();
-            meteor.meteorSurvival();
-            meteor.meteoriteCollection();
+
 
             MeteorParent meteorRef = new Meteor();
             meteorRef.category();
@@ -962,12 +854,6 @@ package com.xworkz.inheritances1;
             exoplanetParent.habitableZone();
             exoplanetParent.exoplanetAtmosphere();
 
-            Exoplanet exoplanet = new Exoplanet();
-            exoplanet.gasGiantExoplanets();
-            exoplanet.rockyExoplanets();
-            exoplanet.exoplanetMoons();
-            exoplanet.exoplanetExploration();
-            exoplanet.waterOnExoplanets();
 
             ExoplanetParent exoplanetRef = new Exoplanet();
             exoplanetRef.category();
@@ -1003,45 +889,38 @@ package com.xworkz.inheritances1;
             System.out.println(">>>>>>>>>>>>>>>> End Of Space Station <<<<<<<<<<<<<<<<");
 
             // ---- ASTEROID ----
-            AsteroidParent asteroidParent = new Asteroid();
+            AnsteroidParent asteroidParent = new Ansteroid();
             asteroidParent.category();
             asteroidParent.largestAsteroid();
             asteroidParent.asteroidBelt();
             asteroidParent.asteroidComposition();
             asteroidParent.asteroidImpact();
 
-            Asteroid asteroid = new Asteroid();
-            asteroid.asteroidTypes();
-            asteroid.nearEarthAsteroids();
-            asteroid.asteroidMissions();
-            asteroid.asteroidMining();
-            asteroid.asteroidDeflection();
+            Ansteroid ansteroid = new Ansteroid();
+            ansteroid.asteroidTypes();
+            ansteroid.nearEarthAsteroids();
+            ansteroid.asteroidMissions();
+            ansteroid.asteroidMining();
+            ansteroid.asteroidDeflection();
 
-            AsteroidParent asteroidRef = new Asteroid();
-            asteroidRef.category();
-            asteroidRef.largestAsteroid();
-            asteroidRef.asteroidBelt();
-            asteroidRef.asteroidComposition();
-            asteroidRef.asteroidImpact();
+            AnsteroidParent ansteroidRef = new Ansteroid();
+            ansteroidRef.category();
+            ansteroidRef.largestAsteroid();
+            ansteroidRef.asteroidBelt();
+            ansteroidRef.asteroidComposition();
+            ansteroidRef.asteroidImpact();
 
-            System.out.println(">>>>>>>>>>>>>>>> End Of Asteroid <<<<<<<<<<<<<<<<");
+            System.out.println(">>>>>>>>>>>>>>>> End Of Ansteroid <<<<<<<<<<<<<<<<");
 
             // ---- BLACK HOLE ----
-            BlackHoleParent blackHoleParent = new BlackHole();
+            BrindavanParent blackHoleParent = new Brindavan();
             blackHoleParent.category();
             blackHoleParent.eventHorizon();
             blackHoleParent.blackHoleFormation();
             blackHoleParent.typesOfBlackHoles();
             blackHoleParent.blackHoleHawkingRadiation();
 
-            BlackHole blackHole = new BlackHole();
-            blackHole.blackHoleSingularity();
-            blackHole.spaghettification();
-            blackHole.blackHoleDetection();
-            blackHole.famousBlackHoles();
-            blackHole.blackHoleTimeDilation();
-
-            BlackHoleParent blackHoleRef = new BlackHole();
+            BrindavanParent blackHoleRef = new Brindavan();
             blackHoleRef.category();
             blackHoleRef.eventHorizon();
             blackHoleRef.blackHoleFormation();
@@ -1178,12 +1057,7 @@ package com.xworkz.inheritances1;
             lotionParent.usage();
             lotionParent.brands();
 
-            Lotion lotion = new Lotion();
-            lotion.sunscreenLotion();
-            lotion.antiAgingLotion();
-            lotion.fragranceFree();
-            lotion.bodyButter();
-            lotion.herbalLotion();
+
 
             LotionParent lotionRef = new Lotion();
             lotionRef.category();
@@ -1226,13 +1100,6 @@ package com.xworkz.inheritances1;
             deodorantParent.usage();
             deodorantParent.brands();
 
-            Deodorant deodorant = new Deodorant();
-            deodorant.rollOnType();
-            deodorant.sprayType();
-            deodorant.unscented();
-            deodorant.allDayProtection();
-            deodorant.herbalDeodorant();
-
             DeodorantParent deodorantRef = new Deodorant();
             deodorantRef.category();
             deodorantRef.keyIngredient();
@@ -1274,13 +1141,6 @@ package com.xworkz.inheritances1;
             faceWashParent.usage();
             faceWashParent.brands();
 
-            FaceWash faceWash = new FaceWash();
-            faceWash.oilControl();
-            faceWash.acneCare();
-            faceWash.hydratingWash();
-            faceWash.exfoliatingScrub();
-            faceWash.herbalFaceWash();
-
             FaceWashParent faceWashRef = new FaceWash();
             faceWashRef.category();
             faceWashRef.keyIngredient();
@@ -1298,12 +1158,6 @@ package com.xworkz.inheritances1;
             hairGelParent.usage();
             hairGelParent.brands();
 
-            HairGel hairGel = new HairGel();
-            hairGel.strongHold();
-            hairGel.wetLook();
-            hairGel.matteFinish();
-            hairGel.alcoholFree();
-            hairGel.scentedGel();
 
             HairGelParent hairGelRef = new HairGel();
             hairGelRef.category();
@@ -1322,12 +1176,7 @@ package com.xworkz.inheritances1;
             mouthwashParent.usage();
             mouthwashParent.brands();
 
-            Mouthwash mouthwash = new Mouthwash();
-            mouthwash.alcoholFree();
-            mouthwash.antibacterial();
-            mouthwash.whiteningMouthwash();
-            mouthwash.fluorideMouthwash();
-            mouthwash.longLastingFreshness();
+
 
             MouthwashParent mouthwashRef = new Mouthwash();
             mouthwashRef.category();

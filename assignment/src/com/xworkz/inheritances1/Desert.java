@@ -1,9 +1,29 @@
 package com.xworkz.inheritances1;
 
 public class Desert extends DesertParent {
-    void temperatureRange() { System.out.println("Temperature Range: -10°C to 50°C"); }
-    void nocturnalAnimals() { System.out.println("Common Nocturnal Species: Fennec Fox"); }
-    void sandDunes() { System.out.println("Largest Sand Dunes: Namib Desert"); }
-    void desertSurvival() { System.out.println("Survival Tip: Carry Water & Shelter"); }
-    void desertEcosystem() { System.out.println("Ecosystem Type: Arid & Semi-Arid"); }
+
+    @Override
+    void category() {
+        System.out.println("Category: Arid Region with Extreme Climate and Sparse Vegetation");
+    }
+
+    @Override
+    void largestDesert() {
+        System.out.println("Largest Desert: Antarctica – cold desert with very low precipitation");
+    }
+
+    @Override
+    void hottestDesert() {
+        System.out.println("Hottest Desert: Sahara – spans across North Africa");
+    }
+
+    @Override
+    void averageRainfall() {
+        System.out.println("Average Rainfall: Typically less than 250mm annually");
+    }
+
+    @Override
+    void desertFlora() {
+        System.out.println("Common Flora: Cactus, Date Palm, and Desert Marigold");
+    }
 }

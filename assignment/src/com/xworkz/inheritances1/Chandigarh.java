@@ -1,9 +1,29 @@
 package com.xworkz.inheritances1;
 
 public class Chandigarh extends ChandigarhParent {
-    void capital() { System.out.println("Capital: Chandigarh"); }
-    void language() { System.out.println("Language: Hindi, Punjabi"); }
-    void population() { System.out.println("Population: 1.1 million"); }
-    void famousFood() { System.out.println("Famous Food: Chole Bhature"); }
-    void touristSpot() { System.out.println("Tourist Spot: Rock Garden"); }
+
+    @Override
+    void countryInfo() {
+        System.out.println("Chandigarh is a beautifully planned city and Union Territory of India.");
+    }
+
+    @Override
+    void stateAnimal() {
+        System.out.println("State Animal: Indian Palm Squirrel");
+    }
+
+    @Override
+    void stateBird() {
+        System.out.println("State Bird: Common Myna");
+    }
+
+    @Override
+    void stateSport() {
+        System.out.println("State Sport: Hockey");
+    }
+
+    @Override
+    void stateFlower() {
+        System.out.println("State Flower: Bougainvillea");
+    }
 }

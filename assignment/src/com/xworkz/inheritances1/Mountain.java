@@ -1,9 +1,9 @@
 package com.xworkz.inheritances1;
 
 public class Mountain extends MountainParent {
-    void location() { System.out.println("Location: Nepal and Tibet"); }
-    void height() { System.out.println("Height: 8848m"); }
-    void famousClimbers() { System.out.println("Famous Climbers: Edmund Hillary, Tenzing Norgay"); }
-    void firstAscent() { System.out.println("First Ascent: 1953"); }
-    void geologicalAge() { System.out.println("Age: 50 million years"); }
+    void popularMountain() { System.out.println("Popular: Mount Everest"); }
+    void flora() { System.out.println("Flora: Pine Trees, Alpine Plants"); }
+    void fauna() { System.out.println("Fauna: Snow Leopard, Mountain Goat"); }
+    void activity() { System.out.println("Activity: Trekking & Climbing"); }
+    void formation() { System.out.println("Formation: Tectonic Plate Movement"); }
 }

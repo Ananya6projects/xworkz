@@ -1,9 +1,9 @@
 package com.xworkz.inheritances1;
 
 public class Lotion extends LotionParent {
-    void sunscreenLotion() { System.out.println("Feature: Includes SPF Protection"); }
-    void antiAgingLotion() { System.out.println("Anti-Aging: Reduces Wrinkles & Fine Lines"); }
-    void fragranceFree() { System.out.println("Variant: Suitable for Sensitive Skin"); }
-    void bodyButter() { System.out.println("Type: Thick & Deeply Moisturizing"); }
-    void herbalLotion() { System.out.println("Contains: Neem, Turmeric & Coconut Oil"); }
+    void type() { System.out.println("Type: Moisturizing Lotion"); }
+    void scent() { System.out.println("Scent: Floral"); }
+    void skinType() { System.out.println("Suitable For: Dry Skin"); }
+    void packaging() { System.out.println("Packaging: Bottle with Pump"); }
+    void shelfLife() { System.out.println("Shelf Life: 2 Years"); }
 }
