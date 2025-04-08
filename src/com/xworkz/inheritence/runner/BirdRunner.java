@@ -1,0 +1,39 @@
+package com.xworkz.inheritence.runner.bird;
+
+import com.xworkz.inheritence.internal.bird.Bird;
+import com.xworkz.inheritence.internal.bird.Eagle;
+import com.xworkz.inheritence.internal.bird.Forest;
+
+public class BirdRunner {
+    public static void main(String[] args) {
+        System.out.println("---------- Bird ----------");
+        Bird bird = new Bird();
+        bird.fly();
+        bird.feathers();
+        bird.layEggs();
+        bird.sound();
+        bird.vision();
+
+        System.out.println("---------- Eagle ----------");
+        Bird eagle = new Eagle();
+        eagle.fly();
+        eagle.feathers();
+        eagle.layEggs();
+        eagle.sound();
+        eagle.vision();
+
+        System.out.println("---------- Direct Eagle ----------");
+        Eagle directEagle = new Eagle();
+        directEagle.fly();
+        directEagle.feathers();
+        directEagle.layEggs();
+        directEagle.sound();
+        directEagle.vision();
+
+        System.out.println("-------casting example------------");
+        Forest forest = new Forest();
+        forest.observe(bird);
+        forest.observe(eagle);
+        forest.observe(directEagle);
+    }
+}
