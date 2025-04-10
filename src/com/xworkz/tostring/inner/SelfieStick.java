@@ -15,8 +15,11 @@ public class SelfieStick {
     public String toString() {
         return "SelfieStick [length=" + length + ", maxLoad=" + maxLoad + ", bluetoothEnabled=" + bluetoothEnabled + "]";
     }
+<<<<<<< HEAD
     @Override
     public int hashCode() {
         return 9;
     }
+=======
+>>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
 }

@@ -15,8 +15,11 @@ public class FlashDrive {
     public String toString() {
         return "FlashDrive [brand=" + brand + ", capacity=" + capacity + ", usb3=" + usb3 + "]";
     }
+<<<<<<< HEAD
     @Override
     public int hashCode() {
         return 80;
     }
+=======
+>>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
 }

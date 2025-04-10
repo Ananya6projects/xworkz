@@ -15,8 +15,11 @@ public class Headphones {
     public String toString() {
         return "Headphones [model=" + model + ", impedance=" + impedance + ", wireless=" + wireless + "]";
     }
+<<<<<<< HEAD
     @Override
     public int hashCode() {
         return 89;
     }
+=======
+>>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
 }

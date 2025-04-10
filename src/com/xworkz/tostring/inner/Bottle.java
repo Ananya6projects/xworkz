@@ -15,8 +15,11 @@ public class Bottle {
     public String toString() {
         return "Bottle [color=" + color + ", capacity=" + capacity + "L, isInsulated=" + isInsulated + "]";
     }
+<<<<<<< HEAD
     @Override
     public int hashCode() {
         return 6;
     }
+=======
+>>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
 }

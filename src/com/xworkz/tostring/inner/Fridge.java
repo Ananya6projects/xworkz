@@ -15,8 +15,11 @@ public class Fridge {
     public String toString() {
         return "Fridge [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+<<<<<<< HEAD
     @Override
     public int hashCode() {
         return 81;
     }
+=======
+>>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
 }

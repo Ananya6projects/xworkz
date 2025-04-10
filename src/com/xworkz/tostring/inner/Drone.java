@@ -15,8 +15,11 @@ public class Drone {
     public String toString() {
         return "Drone [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+<<<<<<< HEAD
     @Override
     public int hashCode() {
         return 70;
     }
+=======
+>>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
 }

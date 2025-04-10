@@ -15,8 +15,11 @@ public class MirrorStand {
     public String toString() {
         return "MirrorStand [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+<<<<<<< HEAD
     @Override
     public int hashCode() {
         return 990;
     }
+=======
+>>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
 }

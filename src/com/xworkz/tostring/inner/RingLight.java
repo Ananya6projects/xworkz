@@ -15,8 +15,11 @@ public class RingLight {
     public String toString() {
         return "RingLight [size=" + size + ", brightnessLevels=" + brightnessLevels + ", colorAdjustable=" + colorAdjustable + "]";
     }
+<<<<<<< HEAD
     @Override
     public int hashCode() {
         return 47;
     }
+=======
+>>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
 }

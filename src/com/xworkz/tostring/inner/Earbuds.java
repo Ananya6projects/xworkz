@@ -15,8 +15,11 @@ public class Earbuds {
     public String toString() {
         return "Earbuds [color=" + color + ", batteryLife=" + batteryLife + ", noiseCancellation=" + noiseCancellation + "]";
     }
+<<<<<<< HEAD
     @Override
     public int hashCode() {
         return 71;
     }
+=======
+>>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
 }

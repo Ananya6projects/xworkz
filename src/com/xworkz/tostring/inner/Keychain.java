@@ -15,8 +15,11 @@ public class Keychain {
     public String toString() {
         return "Keychain [material=" + material + ", keysHeld=" + keysHeld + ", hasLight=" + hasLight + "]";
     }
+<<<<<<< HEAD
     @Override
     public int hashCode() {
         return 92;
     }
+=======
+>>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
 }

@@ -15,9 +15,12 @@ public class Bag {
     public String toString() {
         return "Bag [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+<<<<<<< HEAD
     @Override
     public int hashCode() {
         return 2;
     }
 
+=======
+>>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
 }

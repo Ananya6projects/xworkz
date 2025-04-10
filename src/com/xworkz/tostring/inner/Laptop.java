@@ -13,6 +13,7 @@ public class Laptop {
 
     @Override
     public String toString() {
+<<<<<<< HEAD
 
         return "Laptop [brand=" + brand + ", ram=" + ram + "GB, hasSSD=" + hasSSD + "]";
     }
@@ -22,3 +23,8 @@ public class Laptop {
     }
 }
 
+=======
+        return "Laptop [brand=" + brand + ", ram=" + ram + "GB, hasSSD=" + hasSSD + "]";
+    }
+}
+>>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26

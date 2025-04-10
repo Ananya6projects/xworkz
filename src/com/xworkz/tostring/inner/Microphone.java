@@ -15,8 +15,11 @@ public class Microphone {
     public String toString() {
         return "Microphone [brand=" + brand + ", sensitivity=" + sensitivity + ", noiseCancellation=" + noiseCancellation + "]";
     }
+<<<<<<< HEAD
     @Override
     public int hashCode() {
         return 920;
     }
+=======
+>>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
 }
