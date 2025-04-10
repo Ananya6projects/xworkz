@@ -606,7 +606,7 @@ public class MainRunner {
                 System.out.println("*");
             }
         }
-=======
+
         Backpack backpack = new Backpack("Nylon", 30, true);
         Bag bag = new Bag("Leather", 25, false);
         Bed bed = new Bed("Queen", "Wood", 20000.0);
