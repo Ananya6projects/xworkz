@@ -15,4 +15,8 @@ public class Sunglasses {
     public String toString() {
         return "Sunglasses [frameColor=" + frameColor + ", uvProtection=" + uvProtection + ", polarized=" + polarized + "]";
     }
+    @Override
+    public int hashCode() {
+        return 230;
+    }
 }

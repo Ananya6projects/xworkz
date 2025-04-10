@@ -15,4 +15,8 @@ public class WaterBottle {
     public String toString() {
         return "WaterBottle [material=" + material + ", volume=" + volume + ", insulated=" + insulated + "]";
     }
+    @Override
+    public int hashCode() {
+        return 123;
+    }
 }

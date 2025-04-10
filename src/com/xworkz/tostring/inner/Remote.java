@@ -15,4 +15,8 @@ public class Remote {
     public String toString() {
         return "Remote [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 79;
+    }
 }

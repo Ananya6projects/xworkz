@@ -15,4 +15,8 @@ public class Projector {
     public String toString() {
         return "Projector [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 22;
+    }
 }

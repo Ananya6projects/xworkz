@@ -15,4 +15,8 @@ public class LunchBox {
     public String toString() {
         return "LunchBox [color=" + color + ", containerCount=" + containerCount + ", microwaveSafe=" + microwaveSafe + "]";
     }
+    @Override
+    public int hashCode() {
+        return 900;
+    }
 }

@@ -13,6 +13,11 @@ public class Wrench {
 
     @Override
     public String toString() {
+
         return "Wrench [type=" + type + ", size=" + size + ", adjustable=" + adjustable + "]";
+    }
+    @Override
+    public int hashCode() {
+        return 2025;
     }
 }

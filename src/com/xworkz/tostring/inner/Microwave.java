@@ -15,4 +15,8 @@ public class Microwave {
     public String toString() {
         return "Microwave [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 900;
+    }
 }

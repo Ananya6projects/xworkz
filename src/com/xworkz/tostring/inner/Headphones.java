@@ -15,4 +15,8 @@ public class Headphones {
     public String toString() {
         return "Headphones [model=" + model + ", impedance=" + impedance + ", wireless=" + wireless + "]";
     }
+    @Override
+    public int hashCode() {
+        return 89;
+    }
 }

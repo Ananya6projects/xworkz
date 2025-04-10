@@ -15,4 +15,8 @@ public class PencilBox {
     public String toString() {
         return "PencilBox [shape=" + shape + ", capacity=" + capacity + ", magnetic=" + magnetic + "]";
     }
+    @Override
+    public int hashCode() {
+        return 20;
+    }
 }

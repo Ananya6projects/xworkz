@@ -15,4 +15,8 @@ public class Scanner {
     public String toString() {
         return "Scanner [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 2;
+    }
 }

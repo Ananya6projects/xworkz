@@ -15,4 +15,8 @@ public class Mirror {
     public String toString() {
         return "Mirror [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 790;
+    }
 }

@@ -15,4 +15,8 @@ public class Bottle {
     public String toString() {
         return "Bottle [color=" + color + ", capacity=" + capacity + "L, isInsulated=" + isInsulated + "]";
     }
+    @Override
+    public int hashCode() {
+        return 6;
+    }
 }

@@ -15,4 +15,8 @@ public class Tripod {
     public String toString() {
         return "Tripod [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 3456;
+    }
 }

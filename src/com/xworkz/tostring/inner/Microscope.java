@@ -15,4 +15,8 @@ public class Microscope {
     public String toString() {
         return "Microscope [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 870;
+    }
 }

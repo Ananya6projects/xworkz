@@ -15,4 +15,8 @@ public class MirrorStand {
     public String toString() {
         return "MirrorStand [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 990;
+    }
 }

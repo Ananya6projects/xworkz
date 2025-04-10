@@ -15,4 +15,8 @@ public class Screwdriver {
     public String toString() {
         return "Screwdriver [headType=" + headType + ", length=" + length + ", insulatedHandle=" + insulatedHandle + "]";
     }
+    @Override
+    public int hashCode() {
+        return 9;
+    }
 }

@@ -15,4 +15,8 @@ public class NailCutter {
     public String toString() {
         return "NailCutter [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 750;
+    }
 }

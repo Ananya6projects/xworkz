@@ -15,4 +15,9 @@ public class Backpack {
     public String toString() {
         return "Backpack [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
-}
+        @Override
+        public int hashCode() {
+            return 101;
+        }
+    }
+

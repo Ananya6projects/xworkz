@@ -15,4 +15,8 @@ public class Marker {
     public String toString() {
         return "Marker [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 100;
+    }
 }

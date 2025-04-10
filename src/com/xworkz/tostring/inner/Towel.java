@@ -15,4 +15,8 @@ public class Towel {
     public String toString() {
         return "Towel [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 345;
+    }
 }

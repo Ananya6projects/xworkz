@@ -15,4 +15,8 @@ public class Table {
     public String toString() {
         return "Table [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 123;
+    }
 }

@@ -2,10 +2,10 @@ package com.xworkz.tostring.inner;
 
 public class Calculator {
     private String propertyOne;
-    private boolean propertyTwo;
-    private String propertyThree;
+    private int propertyTwo;
+    private boolean propertyThree;
 
-    public Calculator(String propertyOne, boolean propertyTwo, String propertyThree) {
+    public Calculator(String propertyOne, int propertyTwo, boolean propertyThree) {
         this.propertyOne = propertyOne;
         this.propertyTwo = propertyTwo;
         this.propertyThree = propertyThree;
@@ -14,5 +14,9 @@ public class Calculator {
     @Override
     public String toString() {
         return "Calculator [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
+    }
+    @Override
+    public int hashCode() {
+        return 63;
     }
 }

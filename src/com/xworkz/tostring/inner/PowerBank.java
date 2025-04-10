@@ -15,4 +15,8 @@ public class PowerBank {
     public String toString() {
         return "PowerBank [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 55;
+    }
 }

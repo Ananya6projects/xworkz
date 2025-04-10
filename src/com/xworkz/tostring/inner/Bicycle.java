@@ -3,9 +3,9 @@ package com.xworkz.tostring.inner;
 public class Bicycle {
     private String propertyOne;
     private int propertyTwo;
-    private String propertyThree;
+    private boolean propertyThree;
 
-    public Bicycle(String propertyOne, int propertyTwo, String propertyThree) {
+    public Bicycle(String propertyOne, int propertyTwo, boolean propertyThree) {
         this.propertyOne = propertyOne;
         this.propertyTwo = propertyTwo;
         this.propertyThree = propertyThree;
@@ -14,5 +14,9 @@ public class Bicycle {
     @Override
     public String toString() {
         return "Bicycle [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
+    }
+    @Override
+    public int hashCode() {
+        return 4;
     }
 }

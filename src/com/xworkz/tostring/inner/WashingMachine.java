@@ -15,4 +15,8 @@ public class WashingMachine {
     public String toString() {
         return "WashingMachine [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 678;
+    }
 }

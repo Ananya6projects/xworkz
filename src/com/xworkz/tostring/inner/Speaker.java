@@ -15,4 +15,8 @@ public class Speaker {
     public String toString() {
         return "Speaker [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 125;
+    }
 }

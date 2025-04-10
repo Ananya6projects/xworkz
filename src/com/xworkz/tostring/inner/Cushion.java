@@ -15,4 +15,8 @@ public class Cushion {
     public String toString() {
         return "Cushion [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 66;
+    }
 }

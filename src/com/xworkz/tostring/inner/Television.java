@@ -15,4 +15,8 @@ public class Television {
     public String toString() {
         return "Television [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 123;
+    }
 }

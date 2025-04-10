@@ -15,4 +15,8 @@ public class Curtain {
     public String toString() {
         return "Curtain [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 65;
+    }
 }

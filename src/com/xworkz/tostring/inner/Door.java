@@ -15,4 +15,8 @@ public class Door {
     public String toString() {
         return "Door [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 68;
+    }
 }

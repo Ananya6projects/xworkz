@@ -15,4 +15,8 @@ public class Router {
     public String toString() {
         return "Router [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 14;
+    }
 }

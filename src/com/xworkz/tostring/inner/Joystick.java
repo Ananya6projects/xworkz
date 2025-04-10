@@ -15,4 +15,8 @@ public class Joystick {
     public String toString() {
         return "Joystick [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 96;
+    }
 }

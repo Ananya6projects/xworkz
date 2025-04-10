@@ -15,4 +15,8 @@ public class Pillow {
     public String toString() {
         return "Pillow [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 22;
+    }
 }

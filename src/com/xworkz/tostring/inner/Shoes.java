@@ -15,4 +15,8 @@ public class Shoes {
     public String toString() {
         return "Shoes [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 10;
+    }
 }

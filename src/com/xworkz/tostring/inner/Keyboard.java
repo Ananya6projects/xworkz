@@ -15,4 +15,8 @@ public class Keyboard {
     public String toString() {
         return "Keyboard [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 95;
+    }
 }

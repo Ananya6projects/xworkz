@@ -15,4 +15,8 @@ public class Mattress {
     public String toString() {
         return "Mattress [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 190;
+    }
 }

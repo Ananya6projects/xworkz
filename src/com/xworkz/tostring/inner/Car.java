@@ -2,10 +2,10 @@ package com.xworkz.tostring.inner;
 
 public class Car {
     private String model;
-    private String year;
-    private double isElectric;
+    private int year;
+    private boolean isElectric;
 
-    public Car(String model, String year,double isElectric) {
+    public Car(String model, int year,boolean isElectric) {
         this.model = model;
         this.year = year;
         this.isElectric = isElectric;
@@ -14,5 +14,9 @@ public class Car {
     @Override
     public String toString() {
         return "Car [model=" + model + ", year=" + year + ", isElectric=" + isElectric + "]";
+    }
+    @Override
+    public int hashCode() {
+        return 60;
     }
 }

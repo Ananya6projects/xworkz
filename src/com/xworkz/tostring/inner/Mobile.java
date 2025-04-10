@@ -15,4 +15,8 @@ public class Mobile {
     public String toString() {
         return "Mobile [brand=" + brand + ", storage=" + storage + "GB, is5G=" + is5G + "]";
     }
+    @Override
+    public int hashCode() {
+        return 290;
+    }
 }

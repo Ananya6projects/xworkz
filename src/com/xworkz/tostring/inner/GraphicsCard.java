@@ -15,4 +15,8 @@ public class GraphicsCard {
     public String toString() {
         return "GraphicsCard [brand=" + brand + ", memorySize=" + memorySize + ", supportsRayTracing=" + supportsRayTracing + "]";
     }
+    @Override
+    public int hashCode() {
+        return 86;
+    }
 }

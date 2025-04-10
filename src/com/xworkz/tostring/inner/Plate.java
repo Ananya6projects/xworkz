@@ -15,4 +15,8 @@ public class Plate {
     public String toString() {
         return "Plate [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 88;
+    }
 }

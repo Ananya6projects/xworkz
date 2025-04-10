@@ -15,4 +15,8 @@ public class MousePad {
     public String toString() {
         return "MousePad [material=" + material + ", thickness=" + thickness + ", hasWristRest=" + hasWristRest + "]";
     }
+    @Override
+    public int hashCode() {
+        return 940;
+    }
 }

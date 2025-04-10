@@ -15,4 +15,8 @@ public class Notebook {
     public String toString() {
         return "Notebook [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 190;
+    }
 }

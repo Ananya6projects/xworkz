@@ -15,4 +15,8 @@ public class Comb {
     public String toString() {
         return "Comb [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 63;
+    }
 }

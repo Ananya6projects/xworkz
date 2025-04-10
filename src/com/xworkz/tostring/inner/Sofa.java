@@ -15,4 +15,8 @@ public class Sofa {
     public String toString() {
         return "Sofa [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 23;
+    }
 }

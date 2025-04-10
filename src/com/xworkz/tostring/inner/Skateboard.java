@@ -15,4 +15,8 @@ public class Skateboard {
     public String toString() {
         return "Skateboard [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 40;
+    }
 }

@@ -15,4 +15,8 @@ public class Printer {
     public String toString() {
         return "Printer [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 45;
+    }
 }

@@ -15,4 +15,8 @@ public class Mouse {
     public String toString() {
         return "Mouse [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 490;
+    }
 }

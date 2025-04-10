@@ -15,4 +15,8 @@ public class DrawingTablet {
     public String toString() {
         return "DrawingTablet [model=" + model + ", pressureLevels=" + pressureLevels + ", wireless=" + wireless + "]";
     }
+    @Override
+    public int hashCode() {
+        return 69;
+    }
 }

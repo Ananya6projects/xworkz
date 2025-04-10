@@ -15,4 +15,8 @@ public class Clock {
     public String toString() {
         return "Clock [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 62;
+    }
 }

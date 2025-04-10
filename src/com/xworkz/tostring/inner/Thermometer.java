@@ -15,4 +15,8 @@ public class Thermometer {
     public String toString() {
         return "Thermometer [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 123;
+    }
 }

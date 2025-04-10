@@ -15,4 +15,8 @@ public class Toothbrush {
     public String toString() {
         return "Toothbrush [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 654;
+    }
 }

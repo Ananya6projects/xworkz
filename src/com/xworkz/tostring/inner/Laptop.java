@@ -13,6 +13,12 @@ public class Laptop {
 
     @Override
     public String toString() {
+
         return "Laptop [brand=" + brand + ", ram=" + ram + "GB, hasSSD=" + hasSSD + "]";
     }
+    @Override
+    public int hashCode() {
+        return 10;
+    }
 }
+

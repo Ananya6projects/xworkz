@@ -15,4 +15,8 @@ public class Stapler {
     public String toString() {
         return "Stapler [brand=" + brand + ", pinCapacity=" + pinCapacity + ", isHeavyDuty=" + isHeavyDuty + "]";
     }
+    @Override
+    public int hashCode() {
+        return 120;
+    }
 }

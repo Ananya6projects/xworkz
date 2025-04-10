@@ -15,4 +15,8 @@ public class Wallet {
     public String toString() {
         return "Wallet [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 990;
+    }
 }

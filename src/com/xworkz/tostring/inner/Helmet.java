@@ -15,4 +15,8 @@ public class Helmet {
     public String toString() {
         return "Helmet [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+    @Override
+    public int hashCode() {
+        return 90;
+    }
 }

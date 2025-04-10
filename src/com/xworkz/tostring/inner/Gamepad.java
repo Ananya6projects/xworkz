@@ -15,4 +15,8 @@ public class Gamepad {
     public String toString() {
         return "Gamepad [color=" + color + ", buttons=" + buttons + ", wireless=" + wireless + "]";
     }
+    @Override
+    public int hashCode() {
+        return 83;
+    }
 }
