@@ -3,7 +3,7 @@ import com.xworkz.tostring.inner.*;
 
 public class MainRunner {
     public static void main(String[] args) {
-<<<<<<< HEAD
+
 
                 Backpack backpack = new Backpack("Nylon", 1, true);
                 System.out.println(backpack);
@@ -772,4 +772,4 @@ public class MainRunner {
 
     }
 }
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
