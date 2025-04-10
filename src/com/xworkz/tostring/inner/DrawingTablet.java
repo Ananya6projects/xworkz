@@ -15,11 +15,10 @@ public class DrawingTablet {
     public String toString() {
         return "DrawingTablet [model=" + model + ", pressureLevels=" + pressureLevels + ", wireless=" + wireless + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 69;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
 }
