@@ -15,11 +15,20 @@ public class Stapler {
     public String toString() {
         return "Stapler [brand=" + brand + ", pinCapacity=" + pinCapacity + ", isHeavyDuty=" + isHeavyDuty + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 120;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Stapler other = (Stapler) obj;
+        return this.pinCapacity == other.pinCapacity &&
+                this.isHeavyDuty == other.isHeavyDuty &&
+                (this.brand != null ? this.brand.equals(other.brand) : other.brand == null);
+    }
 }

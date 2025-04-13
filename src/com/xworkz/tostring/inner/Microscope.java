@@ -15,11 +15,22 @@ public class Microscope {
     public String toString() {
         return "Microscope [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 870;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Microscope) {
+                Microscope other = (Microscope) obj;
+                return this.propertyOne.equals(other.propertyOne) &&
+                        this.propertyTwo == other.propertyTwo &&
+                        this.propertyThree == other.propertyThree;
+            }
+        }
+        return false;
+    }
 }

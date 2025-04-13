@@ -15,11 +15,23 @@ public class Microphone {
     public String toString() {
         return "Microphone [brand=" + brand + ", sensitivity=" + sensitivity + ", noiseCancellation=" + noiseCancellation + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 920;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Microphone) {
+                Microphone other = (Microphone) obj;
+                return this.brand.equals(other.brand) &&
+                        this.sensitivity == other.sensitivity &&
+                        this.noiseCancellation == other.noiseCancellation;
+            }
+        }
+        return false;
+    }
+
 }

@@ -15,11 +15,21 @@ public class Mobile {
     public String toString() {
         return "Mobile [brand=" + brand + ", storage=" + storage + "GB, is5G=" + is5G + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 290;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Mobile other = (Mobile) obj;
+        return this.storage == other.storage &&
+                this.is5G == other.is5G &&
+                (this.brand != null ? this.brand.equals(other.brand) : other.brand == null);
+    }
+
 }

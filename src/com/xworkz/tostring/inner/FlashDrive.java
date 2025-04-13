@@ -15,11 +15,22 @@ public class FlashDrive {
     public String toString() {
         return "FlashDrive [brand=" + brand + ", capacity=" + capacity + ", usb3=" + usb3 + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 80;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof FlashDrive) {
+                System.out.println("Ref is FlashDrive, it will compare...");
+                FlashDrive other = (FlashDrive) obj;
+                return this.brand.equals(other.brand) && this.capacity == other.capacity;
+            }
+        }
+        return false;
+    }
 }

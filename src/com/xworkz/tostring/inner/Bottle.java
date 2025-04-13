@@ -15,11 +15,22 @@ public class Bottle {
     public String toString() {
         return "Bottle [color=" + color + ", capacity=" + capacity + "L, isInsulated=" + isInsulated + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 6;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Bottle) {
+                System.out.println("Ref is Bottle, it will compare...");
+                Bottle other = (Bottle) obj;
+                return this.color.equals(other.color) && this.capacity == other.capacity;
+            }
+        }
+        return false;
+    }
+
 }

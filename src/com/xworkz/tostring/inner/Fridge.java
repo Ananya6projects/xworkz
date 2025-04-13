@@ -21,4 +21,17 @@ public class Fridge {
         return 81;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Fridge) {
+                System.out.println("Ref is Fridge, it will compare...");
+                Fridge other = (Fridge) obj;
+                return this.propertyOne.equals(other.propertyOne) && this.propertyTwo == other.propertyTwo;
+            }
+        }
+        return false;
+    }
+
 }

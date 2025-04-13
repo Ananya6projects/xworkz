@@ -15,8 +15,22 @@ public class FrostLink {
     public String toString() {
         return "FrostLink [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+
     @Override
     public int hashCode() {
         return 82;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof FrostLink) {
+                System.out.println("Ref is FrostLink, it will compare...");
+                FrostLink other = (FrostLink) obj;
+                return this.propertyOne.equals(other.propertyOne) && this.propertyTwo == other.propertyTwo;
+            }
+        }
+        return false;
     }
 }

@@ -15,11 +15,22 @@ public class GraphicsCard {
     public String toString() {
         return "GraphicsCard [brand=" + brand + ", memorySize=" + memorySize + ", supportsRayTracing=" + supportsRayTracing + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 86;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof GraphicsCard) {
+                System.out.println("Ref is GraphicsCard, it will compare...");
+                GraphicsCard other = (GraphicsCard) obj;
+                return this.brand.equals(other.brand) && this.memorySize == other.memorySize;
+            }
+        }
+        return false;
+    }
 }

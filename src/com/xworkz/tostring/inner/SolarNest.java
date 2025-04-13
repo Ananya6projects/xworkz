@@ -15,8 +15,21 @@ public class SolarNest {
     public String toString() {
         return "SolarNest [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+
     @Override
     public int hashCode() {
         return 88;
     }
-}
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        SolarNest other = (SolarNest) obj;
+        return this.propertyTwo == other.propertyTwo &&
+                this.propertyThree == other.propertyThree &&
+                (this.propertyOne != null ? this.propertyOne.equals(other.propertyOne) : other.propertyOne == null);
+    }
+    }
+

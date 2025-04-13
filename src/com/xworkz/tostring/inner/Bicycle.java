@@ -1,30 +1,31 @@
 package com.xworkz.tostring.inner;
 
 public class Bicycle {
-    private String propertyOne;
-    private int propertyTwo;
+    private String brand;
+    private int wheelSize;
+    private boolean isElectric;
 
-    private boolean propertyThree;
-
-    public Bicycle(String propertyOne, int propertyTwo, boolean propertyThree) {
-
-    private String propertyThree;
-
-    public Bicycle(String propertyOne, int propertyTwo, String propertyThree) {
-
-        this.propertyOne = propertyOne;
-        this.propertyTwo = propertyTwo;
-        this.propertyThree = propertyThree;
+    public Bicycle(String brand, int wheelSize, boolean isElectric) {
+        this.brand = brand;
+        this.wheelSize = wheelSize;
+        this.isElectric = isElectric;
     }
 
     @Override
     public String toString() {
-        return "Bicycle [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
+        return "Bicycle [brand=" + brand + ", wheelSize=" + wheelSize + ", isElectric=" + isElectric + "]";
     }
 
     @Override
     public int hashCode() {
-        return 4;
+        return 101;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Bicycle bicycle = (Bicycle) obj;
+        return wheelSize == bicycle.wheelSize && isElectric == bicycle.isElectric && brand.equals(bicycle.brand);
+    }
 }

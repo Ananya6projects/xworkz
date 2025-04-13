@@ -15,8 +15,22 @@ public class EchoTrek {
     public String toString() {
         return "EchoTrek [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+
     @Override
     public int hashCode() {
         return 72;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof EchoTrek) {
+                System.out.println("Ref is EchoTrek, it will compare...");
+                EchoTrek other = (EchoTrek) obj;
+                return this.propertyOne.equals(other.propertyOne) && this.propertyTwo == other.propertyTwo;
+            }
+        }
+        return false;
     }
 }

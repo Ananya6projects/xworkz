@@ -15,11 +15,20 @@ public class Refrigerator {
     public String toString() {
         return "Refrigerator [brand=" + brand + ", capacity=" + capacity + "L, hasFreezer=" + hasFreezer + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 47;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Refrigerator other = (Refrigerator) obj;
+        return this.capacity == other.capacity &&
+                this.hasFreezer == other.hasFreezer &&
+                (this.brand != null ? this.brand.equals(other.brand) : other.brand == null);
+    }
 }

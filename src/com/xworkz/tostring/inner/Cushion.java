@@ -15,11 +15,22 @@ public class Cushion {
     public String toString() {
         return "Cushion [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 66;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Cushion) {
+                System.out.println("Ref is Cushion, it will compare...");
+                Cushion other = (Cushion) obj;
+                return this.propertyOne.equals(other.propertyOne) && this.propertyTwo == other.propertyTwo;
+            }
+        }
+        return false;
+    }
 }

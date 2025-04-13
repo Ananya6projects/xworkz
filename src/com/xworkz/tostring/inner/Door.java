@@ -15,11 +15,22 @@ public class Door {
     public String toString() {
         return "Door [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 68;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Door) {
+                System.out.println("Ref is Door, it will compare...");
+                Door other = (Door) obj;
+                return this.propertyOne.equals(other.propertyOne) && this.propertyTwo == other.propertyTwo;
+            }
+        }
+        return false;
+    }
 }

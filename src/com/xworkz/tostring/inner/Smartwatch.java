@@ -15,11 +15,21 @@ public class Smartwatch {
     public String toString() {
         return "Smartwatch [model=" + model + ", batteryLife=" + batteryLife + ", fitnessTracking=" + fitnessTracking + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 11;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Smartwatch other = (Smartwatch) obj;
+        return this.batteryLife == other.batteryLife &&
+                this.fitnessTracking == other.fitnessTracking &&
+                (this.model != null ? this.model.equals(other.model) : other.model == null);
+    }
+
 }

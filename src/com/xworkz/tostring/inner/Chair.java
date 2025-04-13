@@ -15,11 +15,22 @@ public class Chair {
     public String toString() {
         return "Chair [material=" + material + ", legs=" + legs + ", hasCushion=" + hasCushion + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
-        return 06;
+        return 6;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Chair) {
+                System.out.println("Ref is Chair, it will compare...");
+                Chair other = (Chair) obj;
+                return this.material.equals(other.material) && this.legs == other.legs;
+            }
+        }
+        return false;
+    }
 }

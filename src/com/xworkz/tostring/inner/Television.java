@@ -15,11 +15,24 @@ public class Television {
     public String toString() {
         return "Television [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 123;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Television television = (Television) obj;
+        return propertyTwo == television.propertyTwo &&
+                propertyThree == television.propertyThree &&
+                propertyOne.equals(television.propertyOne);
+    }
+
 }

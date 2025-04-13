@@ -15,11 +15,23 @@ public class Toothbrush {
     public String toString() {
         return "Toothbrush [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 654;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Toothbrush toothbrush = (Toothbrush) obj;
+        return propertyTwo == toothbrush.propertyTwo &&
+                propertyThree == toothbrush.propertyThree &&
+                propertyOne.equals(toothbrush.propertyOne);
+    }
 }

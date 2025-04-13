@@ -15,11 +15,22 @@ public class Headphones {
     public String toString() {
         return "Headphones [model=" + model + ", impedance=" + impedance + ", wireless=" + wireless + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 89;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Headphones) {
+                System.out.println("Ref is Headphones, it will compare...");
+                Headphones other = (Headphones) obj;
+                return this.model.equals(other.model) && this.impedance == other.impedance;
+            }
+        }
+        return false;
+    }
 }

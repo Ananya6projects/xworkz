@@ -15,8 +15,24 @@ public class LumenBox {
     public String toString() {
         return "LumenBox [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+
     @Override
     public int hashCode() {
         return 100;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof LumenBox) {
+                System.out.println("Ref is LumenBox, comparing...");
+                LumenBox other = (LumenBox) obj;
+                return this.propertyOne.equals(other.propertyOne) &&
+                        this.propertyTwo == other.propertyTwo &&
+                        this.propertyThree == other.propertyThree;
+            }
+        }
+        return false;
     }
 }

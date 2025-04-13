@@ -15,11 +15,24 @@ public class Keychain {
     public String toString() {
         return "Keychain [material=" + material + ", keysHeld=" + keysHeld + ", hasLight=" + hasLight + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 92;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Keychain) {
+                System.out.println("Ref is Keychain, comparing...");
+                Keychain other = (Keychain) obj;
+                return this.material.equals(other.material) &&
+                        this.keysHeld == other.keysHeld &&
+                        this.hasLight == other.hasLight;
+            }
+        }
+        return false;
+    }
 }

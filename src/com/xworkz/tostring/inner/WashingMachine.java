@@ -15,11 +15,24 @@ public class WashingMachine {
     public String toString() {
         return "WashingMachine [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 678;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        WashingMachine that = (WashingMachine) obj;
+        return propertyTwo == that.propertyTwo &&
+                propertyThree == that.propertyThree &&
+                propertyOne.equals(that.propertyOne);
+    }
+
 }

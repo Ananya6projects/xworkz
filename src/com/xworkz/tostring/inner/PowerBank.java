@@ -15,11 +15,20 @@ public class PowerBank {
     public String toString() {
         return "PowerBank [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 55;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        PowerBank other = (PowerBank) obj;
+        return this.propertyTwo == other.propertyTwo &&
+                this.propertyThree == other.propertyThree &&
+                (this.propertyOne != null ? this.propertyOne.equals(other.propertyOne) : other.propertyOne == null);
+    }
 }

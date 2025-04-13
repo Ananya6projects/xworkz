@@ -15,11 +15,23 @@ public class Gamepad {
     public String toString() {
         return "Gamepad [color=" + color + ", buttons=" + buttons + ", wireless=" + wireless + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 83;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Gamepad) {
+                System.out.println("Ref is Gamepad, it will compare...");
+                Gamepad other = (Gamepad) obj;
+                return this.color.equals(other.color) && this.buttons == other.buttons;
+            }
+        }
+        return false;
+    }
+
 }

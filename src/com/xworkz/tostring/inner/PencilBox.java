@@ -15,11 +15,21 @@ public class PencilBox {
     public String toString() {
         return "PencilBox [shape=" + shape + ", capacity=" + capacity + ", magnetic=" + magnetic + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 20;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        PencilBox other = (PencilBox) obj;
+        return this.capacity == other.capacity &&
+                this.magnetic == other.magnetic &&
+                (this.shape != null ? this.shape.equals(other.shape) : other.shape == null);
+    }
+
 }

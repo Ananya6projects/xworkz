@@ -15,11 +15,21 @@ public class RingLight {
     public String toString() {
         return "RingLight [size=" + size + ", brightnessLevels=" + brightnessLevels + ", colorAdjustable=" + colorAdjustable + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 47;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        RingLight other = (RingLight) obj;
+        return this.brightnessLevels == other.brightnessLevels &&
+                this.colorAdjustable == other.colorAdjustable &&
+                (this.size != null ? this.size.equals(other.size) : other.size == null);
+    }
+
 }

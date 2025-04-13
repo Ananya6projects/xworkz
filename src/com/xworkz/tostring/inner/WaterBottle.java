@@ -13,13 +13,26 @@ public class WaterBottle {
 
     @Override
     public String toString() {
-        return "WaterBottle [material=" + material + ", volume=" + volume + ", insulated=" + insulated + "]";
+        return "WaterBottle [material=" + material + ", volume=" + volume + "L, insulated=" + insulated + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 123;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        WaterBottle that = (WaterBottle) obj;
+        return volume == that.volume &&
+                insulated == that.insulated &&
+                material.equals(that.material);
+    }
+
 }

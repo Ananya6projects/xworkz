@@ -15,8 +15,24 @@ public class VortexShield {
     public String toString() {
         return "VortexShield [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+
     @Override
     public int hashCode() {
         return 2345;
     }
-}
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        VortexShield that = (VortexShield) obj;
+        return propertyTwo == that.propertyTwo &&
+                propertyThree == that.propertyThree &&
+                propertyOne.equals(that.propertyOne);
+    }
+    }
+

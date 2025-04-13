@@ -15,8 +15,22 @@ public class CrystalTune {
     public String toString() {
         return "CrystalTune [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+
     @Override
     public int hashCode() {
         return 64;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof CrystalTune) {
+                System.out.println("Ref is CrystalTune, it will compare...");
+                CrystalTune other = (CrystalTune) obj;
+                return this.propertyOne.equals(other.propertyOne) && this.propertyTwo == other.propertyTwo;
+            }
+        }
+        return false;
     }
 }

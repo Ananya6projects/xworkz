@@ -15,11 +15,22 @@ public class LunchBox {
     public String toString() {
         return "LunchBox [color=" + color + ", containerCount=" + containerCount + ", microwaveSafe=" + microwaveSafe + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 900;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof LunchBox) {
+                LunchBox other = (LunchBox) obj;
+                return this.color.equals(other.color) &&
+                        this.containerCount == other.containerCount &&
+                        this.microwaveSafe == other.microwaveSafe;
+            }
+        }
+        return false;
+    }
 }

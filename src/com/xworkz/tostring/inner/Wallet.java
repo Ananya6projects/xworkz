@@ -15,11 +15,24 @@ public class Wallet {
     public String toString() {
         return "Wallet [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 990;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Wallet that = (Wallet) obj;
+        return propertyTwo == that.propertyTwo &&
+                propertyThree == that.propertyThree &&
+                propertyOne.equals(that.propertyOne);
+    }
+
 }

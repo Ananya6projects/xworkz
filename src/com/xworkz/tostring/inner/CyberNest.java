@@ -15,8 +15,22 @@ public class CyberNest {
     public String toString() {
         return "CyberNest [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+
     @Override
     public int hashCode() {
         return 67;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof CyberNest) {
+                System.out.println("Ref is CyberNest, it will compare...");
+                CyberNest other = (CyberNest) obj;
+                return this.propertyOne.equals(other.propertyOne) && this.propertyTwo == other.propertyTwo;
+            }
+        }
+        return false;
     }
 }

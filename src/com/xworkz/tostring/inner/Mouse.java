@@ -15,11 +15,21 @@ public class Mouse {
     public String toString() {
         return "Mouse [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 490;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Mouse other = (Mouse) obj;
+        return this.propertyTwo == other.propertyTwo &&
+                this.propertyThree == other.propertyThree &&
+                (this.propertyOne != null ? this.propertyOne.equals(other.propertyOne) : other.propertyOne == null);
+    }
+
 }

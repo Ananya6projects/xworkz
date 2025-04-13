@@ -15,11 +15,21 @@ public class Screwdriver {
     public String toString() {
         return "Screwdriver [headType=" + headType + ", length=" + length + ", insulatedHandle=" + insulatedHandle + "]";
     }
-<<<<<<< HEAD
+
     @Override
     public int hashCode() {
         return 9;
     }
-=======
->>>>>>> 2bbdda669c66c39b95e494046f8469410ab57e26
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Screwdriver other = (Screwdriver) obj;
+        return this.length == other.length &&
+                this.insulatedHandle == other.insulatedHandle &&
+                (this.headType != null ? this.headType.equals(other.headType) : other.headType == null);
+    }
+
 }

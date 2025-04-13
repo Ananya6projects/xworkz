@@ -21,4 +21,16 @@ public class DrawingTablet {
         return 69;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof DrawingTablet) {
+                System.out.println("Ref is DrawingTablet, it will compare...");
+                DrawingTablet other = (DrawingTablet) obj;
+                return this.model.equals(other.model) && this.pressureLevels == other.pressureLevels;
+            }
+        }
+        return false;
+    }
 }

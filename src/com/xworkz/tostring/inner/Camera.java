@@ -15,4 +15,23 @@ public class Camera {
     public String toString() {
         return "Camera [propertyOne=" + propertyOne + ", propertyTwo=" + propertyTwo + ", propertyThree=" + propertyThree + "]";
     }
+
+    @Override
+    public int hashCode() {
+        return 7;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Ref is not null");
+            if (obj instanceof Camera) {
+                System.out.println("Ref is Camera, it will compare...");
+                Camera other = (Camera) obj;
+                return this.propertyOne.equals(other.propertyOne) && this.propertyTwo == other.propertyTwo;
+            }
+        }
+        return false;
+    }
 }
+
