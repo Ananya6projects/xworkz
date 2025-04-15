@@ -3,7 +3,7 @@ import com.xworkz.tostring.inner.*;
 
 public class MainRunner {
     public static void main(String[] args) {
-<<<<<<< HEAD
+
 
         AeroGrid aeroGrid = new AeroGrid("High-Performance", 800, true);
         System.out.println(aeroGrid);
@@ -1291,7 +1291,5 @@ public class MainRunner {
         System.out.println("equals: " + zenPulse.equals(anotherZenPulse));
     }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 82fdd5175d6c058bb5891ccc225197d9efb05c34
+
